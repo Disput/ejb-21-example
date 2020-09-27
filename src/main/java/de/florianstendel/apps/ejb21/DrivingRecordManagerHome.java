@@ -1,6 +1,7 @@
 package de.florianstendel.apps.ejb21;
 
 import javax.ejb.*;
+import java.rmi.RemoteException;
 
 /**
  * A home interface is managed (resp. it's implementation, the tie)
@@ -9,5 +10,5 @@ import javax.ejb.*;
  */
 public interface DrivingRecordManagerHome extends EJBHome {
 
-    public DrivingRecordManagerSessionBean create();
+    public DrivingRecordManagerSessionBean create() throws RemoteException;
 }
