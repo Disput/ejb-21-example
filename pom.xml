@@ -16,6 +16,10 @@
     </properties>
 
     <dependencies>
+        <!-- do not use this dependency, as some ejb related stuff is missing,
+        use the openejb one instead
+        -->
+
 <!--        <dependency>
             <groupId>javax</groupId>
             <artifactId>javaee-api</artifactId>
@@ -27,6 +31,7 @@
             <groupId>org.apache.openejb</groupId>
             <artifactId>javaee-api</artifactId>
             <version>6.0-5</version>
+            <scope>provided</scope>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.glassfish.corba/glassfish-corba-omgapi -->
